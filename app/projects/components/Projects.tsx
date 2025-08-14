@@ -1,8 +1,9 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { MoveUpRight } from 'lucide-react';
 type ProjectProps = {
-  id: string; // id prop нэмлээ
+  id: string;
 };
 
 export default function Projects( { id }: ProjectProps ) {
@@ -23,7 +24,9 @@ export default function Projects( { id }: ProjectProps ) {
         {projects.map((project) => (
           <div className="" key={project.name}>
             <div className="relative w-[300px] h-[200px] group overflow-hidden rounded-lg shadow-md">
-              <img
+              <Image
+                width={300}
+                height={200}
                 src={project.picture}
                 alt={project.name}
                 className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:opacity-30"

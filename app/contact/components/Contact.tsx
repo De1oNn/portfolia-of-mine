@@ -1,3 +1,4 @@
+"use client"
 import { Mail, Facebook, Instagram, Linkedin } from 'lucide-react';
 import { Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";

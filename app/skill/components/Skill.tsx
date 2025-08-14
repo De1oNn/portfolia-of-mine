@@ -1,3 +1,4 @@
+"use client";
 type SkillsProps = {
   id: string; // id prop нэмлээ
 };

@@ -1,7 +1,8 @@
+"use client";
 import { Button } from "@/components/ui/button";
 
 type AboutProps = {
-  id: string; // id prop нэмлээ
+  id: string;
 };
 export default function About({ id }: AboutProps) {
   return (
@@ -14,12 +15,10 @@ export default function About({ id }: AboutProps) {
           </p>
         </div>
 
-        {/* Товч мэдээлэл хэсэг */}
         <p className="text-[19px] dark:text-white text-center text-[#484E53] font-medium w-[800px] mt-4">
           Сайн байна уу! Би Х. Насанжаргал, вэб хөгжүүлэлт болон хиймэл оюун ухааны чиглэлд карьераа хөгжүүлэх зорилготой junior програм хангамжийн инженер...
         </p>
 
-        {/* Download CV Button */}
         <a href="/cv final.docx" download>
           <Button className="dark:border-[#4FC3F7] dark:text-white bg-transparent text-[15px] text-[#484E53] hover:bg-transparent hover:border-[3px] h-[55px] w-[187px] border-[1px] border-black text-black mt-[40px] rounded-[75px]">
             Download CV
