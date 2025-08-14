@@ -1,4 +1,7 @@
-export default function Skills() {
+type SkillsProps = {
+  id: string; // id prop нэмлээ
+};
+export default function Skills({ id }: SkillsProps) {
   const skills = [
     "JavaScript",
     "TypeScript",
@@ -13,10 +16,12 @@ export default function Skills() {
     "CI/CD",
     "Next.js",
     "Tailwind CSS",
+    "GraphQL",
+    "REST APIs",
   ];
 
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-center bg-[#E0E8F6] dark:bg-[#1A1A1A] px-4 py-12">
+    <div className="w-full h-screen flex flex-col items-center justify-center bg-[#E0E8F6] dark:bg-[#1A1A1A] px-4 py-12" id={id}  >
       <h1 className="text-5xl md:text-6xl font-extrabold mb-10 text-gray-900 dark:text-gray-100 select-none">
         Skills
       </h1>
